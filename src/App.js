@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Board from './components/Board';
+import Grid from '@material-ui/core/Grid';
 
 function App() {
   return (
@@ -9,6 +11,12 @@ function App() {
         <p>
           A game of champions.
         </p>
+        <div>
+          <Grid container>
+            <Board className="board" />
+            <Board className="board" />
+          </Grid>
+        </div>
       </header>
     </div>
   );
